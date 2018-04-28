@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NRLoginManager_Example' do
+  pod 'NRLoginManager', :path => '../'
+
+  target 'NRLoginManager_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
