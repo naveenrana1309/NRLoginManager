@@ -1,0 +1,6 @@
+framework module NRLoginManager {
+  umbrella header "NRLoginManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

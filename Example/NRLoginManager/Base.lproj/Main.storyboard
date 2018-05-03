@@ -1,30 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4yu-K0-J9q">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <scene sceneID="6rv-p9-Ruw">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="NRLoginManager_Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                <viewController storyboardIdentifier="LoginViewController" id="4yu-K0-J9q" customClass="ViewController" customModule="NRLoginManager_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jHh-bo-1m6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZS-cV-P0h">
+                                <rect key="frame" x="27.5" y="215.5" width="320" height="60"/>
+                                <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="1Dn-dv-LQQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="LOG IN WITH FACEBOOK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="facebookButtonPressed:" destination="4yu-K0-J9q" eventType="touchUpInside" id="CnR-4e-tOm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZs-Vz-O6C">
+                                <rect key="frame" x="27.5" y="292.5" width="320" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="kGp-R8-Rab"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="LOG IN WITH GOOGLE">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="googleButtonPressed:" destination="4yu-K0-J9q" eventType="touchUpInside" id="HrN-M0-Rg8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By NAVEEN RANA" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2L-wA-dx7" customClass="RDSActionLabel" customModule="RDSActionLabel">
+                                <rect key="frame" x="55.5" y="620.5" width="263" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPD-06-YOM">
+                                <rect key="frame" x="187.5" y="120" width="0.0" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="EJg-8i-fGm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HPD-06-YOM" firstAttribute="centerX" secondItem="jdf-bP-O4X" secondAttribute="centerX" id="3jK-Rv-eGc"/>
+                            <constraint firstItem="HPD-06-YOM" firstAttribute="top" secondItem="jdf-bP-O4X" secondAttribute="top" constant="100" id="CRD-YJ-ug3"/>
+                            <constraint firstItem="RZs-Vz-O6C" firstAttribute="top" secondItem="cZS-cV-P0h" secondAttribute="bottom" constant="17" id="E3U-qW-wOE"/>
+                            <constraint firstItem="cZS-cV-P0h" firstAttribute="leading" secondItem="jdf-bP-O4X" secondAttribute="leading" constant="27.5" id="MsJ-LX-aif"/>
+                            <constraint firstItem="RZs-Vz-O6C" firstAttribute="leading" secondItem="jdf-bP-O4X" secondAttribute="leading" constant="27.5" id="SnC-5g-BlD"/>
+                            <constraint firstItem="jdf-bP-O4X" firstAttribute="trailing" secondItem="RZs-Vz-O6C" secondAttribute="trailing" constant="27.5" id="VOS-eX-Plk"/>
+                            <constraint firstItem="L2L-wA-dx7" firstAttribute="leading" secondItem="jdf-bP-O4X" secondAttribute="leading" constant="55.5" id="WZz-s9-CHY"/>
+                            <constraint firstItem="jdf-bP-O4X" firstAttribute="bottom" secondItem="L2L-wA-dx7" secondAttribute="bottom" constant="20" id="X3b-DO-fnt"/>
+                            <constraint firstItem="jdf-bP-O4X" firstAttribute="trailing" secondItem="L2L-wA-dx7" secondAttribute="trailing" constant="56.5" id="Y0i-bn-dPa"/>
+                            <constraint firstItem="jdf-bP-O4X" firstAttribute="trailing" secondItem="cZS-cV-P0h" secondAttribute="trailing" constant="27.5" id="kA7-q3-wYK"/>
+                            <constraint firstItem="cZS-cV-P0h" firstAttribute="top" secondItem="HPD-06-YOM" secondAttribute="bottom" constant="72.5" id="vJQ-D6-dRG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jdf-bP-O4X"/>
                     </view>
+                    <navigationItem key="navigationItem" id="lnR-Pt-obg"/>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="HPD-06-YOM" id="nTc-6t-rgM"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wcv-ig-8HI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-5681" y="-1177"/>
         </scene>
     </scenes>
 </document>
