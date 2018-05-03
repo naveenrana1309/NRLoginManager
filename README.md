@@ -5,7 +5,7 @@
 [![Version](https://img.shields.io/cocoapods/v/NRLoginManager.svg?style=flat)](http://cocoapods.org/pods/NRLoginManager)
 [![License](https://img.shields.io/cocoapods/l/NRLoginManager.svg?style=flat)](http://cocoapods.org/pods/NRLoginManager)
 [![Platform](https://img.shields.io/cocoapods/p/NRLoginManager.svg?style=flat)](http://cocoapods.org/pods/NRLoginManager)
-![ScreenShot](https://cdn.rawgit.com/naveenrana1309/NRLoginManager/master/Example/samplewithdocument.png "Screeshot")
+![ScreenShot](https://cdn.rawgit.com/naveenrana1309/NRLoginManager/master/Example/sample.png "Screeshot")
 
 
 
